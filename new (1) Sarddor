@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int m, s = 0;
+
+    cout << "Введите m: ";
+    cin >> m;
+
+    for (int i = 1; i <= 1000; i++)
+    {
+        if (i % 200 == 0)
+        {
+            s += i % m;
+        }
+    }
+
+    cout << "s = " << s << endl;
+
+    return 0;
+}
